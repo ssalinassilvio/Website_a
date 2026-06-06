@@ -9,29 +9,32 @@
     <meta name="keywords" content="IA, proyectos, desarrollo, software">
     <meta name="author" content="DevNewSolutions">
     <meta name="robots" content="index, follow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/hero.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div style="display: flex; content:  center;">
-                <a href="index.html">Inicio</a>
-                <a href="pages/services.html">Servicios</a>
-                <a href="pages/about.html">Acerca De</a>
-                <a href="pages/contact.html">Contacto</a>
-            </div>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Navegación principal">
+            <a href="index.html" class="navbar-brand">DevNewSolutions</a>
+            <ul class="navbar-links">
+                <li><a href="index.html" class="navbar-link navbar-link--active">Inicio</a></li>
+                <li><a href="pages/services.html" class="navbar-link">Servicios</a></li>
+                <li><a href="pages/about.html" class="navbar-link">Acerca De</a></li>
+                <li><a href="pages/contact.html" class="navbar-link">Contacto</a></li>
+            </ul>
         </nav>
     </header>
     <main>
         <section class="hero">
-            <div class="hero-content">
-                <h1>Alcanza tu máximo potencial con proyectos usando IA</h1>
-                <p>We provide the best solutions for your business needs.</p>
-                <button>Get Started</button>
-            </div>
-        </section>
-        <section class="hero-image">
-            <img src="assets/img/hero.png" alt="Imagen de ejemplo" width="100%" height="100%">
+            <h1>Alcanza tu máximo potencial con proyectos usando IA</h1>
+            <p>Ofrecemos las mejores soluciones para las necesidades de tu negocio.</p>
+            <a href="pages/services.html" class="hero-button">Ver servicios</a>
+            <img src="assets/img/hero.png" alt="Ilustración de proyectos con IA" class="hero-image">
         </section>
     </main>
     <footer>

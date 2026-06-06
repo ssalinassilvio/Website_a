@@ -1,22 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Contacto - DevNewSolutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/contact.css">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <a href="/index.html">Inicio</a>
-            <a href="services.html">Servicios</a>
-            <a href="about.html">Acerca De</a>
-            <a href="contact.html">Contacto</a>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Navegación principal">
+            <a href="../index.html" class="navbar-brand">DevNewSolutions</a>
+            <ul class="navbar-links">
+                <li><a href="../index.html" class="navbar-link">Inicio</a></li>
+                <li><a href="services.html" class="navbar-link">Servicios</a></li>
+                <li><a href="about.html" class="navbar-link">Acerca De</a></li>
+                <li><a href="contact.html" class="navbar-link navbar-link--active">Contacto</a></li>
+            </ul>
         </nav>
     </header>
-    <h1>Contact</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
-    <p>Email: <a href="mailto:contact@devnewsolutions.com">contact@devnewsolutions.com</a></p>
-    <p>Teléfono: <a href="tel:+50584516988">+505 84516988</a></p>
+
+    <main class="contact">
+        <h1>Contáctanos</h1>
+        <p class="contact-intro">¿Tienes un proyecto en mente? Escríbenos y te responderemos pronto.</p>
+
+        <div class="contact-info">
+            <p><strong>Email:</strong> <a href="mailto:contact@devnewsolutions.com">contact@devnewsolutions.com</a></p>
+            <p><strong>Teléfono:</strong> <a href="tel:+50584516988">+505 84516988</a></p>
+        </div>
+
+        <form class="contact-form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="tu@email.com">
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..."></textarea>
+
+            <button type="submit" class="contact-button">Enviar mensaje</button>
+        </form>
+    </main>
 </body>
+
 </html>
