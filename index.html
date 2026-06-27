@@ -1,45 +1,209 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevNewSolutions</title>
+    <title>DevNewSolutions — Inicio</title>
     <meta name="description" content="Alcanza tu máximo potencial con proyectos con IA">
-    <meta name="keywords" content="IA, proyectos, desarrollo, software">
+    <meta name="keywords" content="IA, proyectos, desarrollo, software, HTML5, CSS">
     <meta name="author" content="DevNewSolutions">
     <meta name="robots" content="index, follow">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/hero.css">
 </head>
 
 <body>
-    <header class="site-header">
-        <nav class="navbar" aria-label="Navegación principal">
-            <a href="index.html" class="navbar-brand">DevNewSolutions</a>
-            <ul class="navbar-links">
-                <li><a href="index.html" class="navbar-link navbar-link--active">Inicio</a></li>
-                <li><a href="pages/services.html" class="navbar-link">Servicios</a></li>
-                <li><a href="pages/about.html" class="navbar-link">Acerca De</a></li>
-                <li><a href="pages/contact.html" class="navbar-link">Contacto</a></li>
-            </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Navegación principal">
+            <div class="container">
+                <a href="index.html" class="navbar-brand">DevNewSolutions</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                    aria-controls="mainNav" aria-expanded="false" aria-label="Abrir menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link active" aria-current="page">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/services.html" class="nav-link">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/about.html" class="nav-link">Acerca De</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/contact.html" class="nav-link">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/login.html" class="nav-link">Iniciar sesión</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
+
     <main>
-        <section class="hero">
-            <h1>Alcanza tu máximo potencial con proyectos usando IA</h1>
-            <p>Ofrecemos las mejores soluciones para las necesidades de tu negocio.</p>
-            <a href="pages/services.html" class="hero-button">Ver servicios</a>
-            <img src="assets/img/hero.png" alt="Ilustración de proyectos con IA" class="hero-image">
+        <!-- Hero -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6 text-center text-lg-start">
+                        <span class="badge bg-primary student-badge mb-3">Proyecto HTML5 &amp; CSS</span>
+                        <h1 class="display-5 fw-bold mb-3">
+                            Alcanza tu máximo potencial con proyectos usando IA
+                        </h1>
+                        <p class="lead text-muted mb-4">
+                            Ofrecemos soluciones tecnológicas modernas para negocios que quieren crecer.
+                            Este sitio fue construido con HTML5 semántico, CSS limpio y Bootstrap 5.
+                        </p>
+                        <div class="d-flex flex-wrap gap-2 justify-content-center justify-content-lg-start">
+                            <a href="pages/services.html" class="btn btn-primary btn-lg">Ver servicios</a>
+                            <a href="pages/contact.html" class="btn btn-outline-primary btn-lg">Contáctanos</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-center">
+                        <img src="assets/img/hero.png" alt="Ilustración de proyectos con inteligencia artificial"
+                            class="hero-image img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Características -->
+        <section class="section-padding bg-white" aria-labelledby="features-title">
+            <div class="container">
+                <h2 id="features-title" class="section-title text-center">¿Por qué elegirnos?</h2>
+                <p class="section-subtitle text-center">
+                    Combinamos diseño web, desarrollo y herramientas de IA para crear soluciones útiles.
+                </p>
+                <div class="row g-4">
+                    <article class="col-md-4">
+                        <div class="card service-card border-0 shadow-sm h-100 p-4">
+                            <div class="feature-icon" aria-hidden="true">&#9881;</div>
+                            <h3 class="h5 fw-bold">Desarrollo Web</h3>
+                            <p class="text-muted mb-0">
+                                Creamos sitios responsivos con HTML5, CSS y frameworks modernos como Bootstrap.
+                                Cada página usa etiquetas semánticas: <code>&lt;header&gt;</code>,
+                                <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code> y <code>&lt;footer&gt;</code>.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="col-md-4">
+                        <div class="card service-card border-0 shadow-sm h-100 p-4">
+                            <div class="feature-icon" aria-hidden="true">&#129302;</div>
+                            <h3 class="h5 fw-bold">Inteligencia Artificial</h3>
+                            <p class="text-muted mb-0">
+                                Integramos chatbots, análisis de datos y automatización para que tu negocio
+                                trabaje de forma más inteligente y eficiente cada día.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="col-md-4">
+                        <div class="card service-card border-0 shadow-sm h-100 p-4">
+                            <div class="feature-icon" aria-hidden="true">&#128736;</div>
+                            <h3 class="h5 fw-bold">Soporte Continuo</h3>
+                            <p class="text-muted mb-0">
+                                No te dejamos solo después de entregar el proyecto. Ofrecemos mantenimiento,
+                                actualizaciones y asistencia técnica cuando la necesites.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tecnologías que usamos -->
+        <section class="section-padding bg-light" aria-labelledby="tech-title">
+            <div class="container">
+                <h2 id="tech-title" class="section-title text-center">Tecnologías que aprendemos y usamos</h2>
+                <p class="section-subtitle text-center">
+                    Como estudiante de HTML5 y CSS, este proyecto demuestra buenas prácticas web.
+                </p>
+                <div class="row g-3 justify-content-center">
+                    <div class="col-6 col-sm-4 col-md-2">
+                        <div class="card text-center border-0 shadow-sm p-3">
+                            <strong>HTML5</strong>
+                            <small class="text-muted d-block">Estructura</small>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-2">
+                        <div class="card text-center border-0 shadow-sm p-3">
+                            <strong>CSS3</strong>
+                            <small class="text-muted d-block">Estilos</small>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-2">
+                        <div class="card text-center border-0 shadow-sm p-3">
+                            <strong>Bootstrap</strong>
+                            <small class="text-muted d-block">Layout</small>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-2">
+                        <div class="card text-center border-0 shadow-sm p-3">
+                            <strong>Flexbox</strong>
+                            <small class="text-muted d-block">Diseño</small>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-2">
+                        <div class="card text-center border-0 shadow-sm p-3">
+                            <strong>Grid</strong>
+                            <small class="text-muted d-block">Columnas</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="section-padding bg-primary text-white text-center" aria-labelledby="cta-title">
+            <div class="container">
+                <h2 id="cta-title" class="h2 fw-bold mb-3">¿Listo para empezar tu proyecto?</h2>
+                <p class="lead mb-4 opacity-75">
+                    Cuéntanos tu idea y te ayudamos a convertirla en una solución real con tecnología moderna.
+                </p>
+                <a href="pages/contact.html" class="btn btn-light btn-lg">Solicitar información</a>
+            </div>
         </section>
     </main>
-    <footer>
-        <p style="text-align: center;">Derechos reservados &copy; 2026</p>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <p class="footer-heading">DevNewSolutions</p>
+                    <p class="small">Desarrollo de software e inteligencia artificial para negocios en crecimiento.</p>
+                </div>
+                <div class="col-md-4">
+                    <p class="footer-heading">Enlaces</p>
+                    <ul class="list-unstyled small">
+                        <li><a href="pages/services.html">Servicios</a></li>
+                        <li><a href="pages/about.html">Acerca De</a></li>
+                        <li><a href="pages/contact.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <p class="footer-heading">Contacto</p>
+                    <p class="small mb-1">
+                        <a href="mailto:contact@devnewsolutions.com">contact@devnewsolutions.com</a>
+                    </p>
+                    <p class="small mb-0">
+                        <a href="tel:+50584516988">+505 8451 6988</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="mb-0">Derechos reservados &copy; 2026 DevNewSolutions</p>
+            </div>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

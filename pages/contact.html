@@ -1,53 +1,173 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - DevNewSolutions</title>
+    <title>Contacto — DevNewSolutions</title>
+    <meta name="description" content="Contáctanos para tu próximo proyecto web o de IA">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/global.css">
-    <link rel="stylesheet" href="../css/navbar.css">
-    <link rel="stylesheet" href="../css/contact.css">
 </head>
 
 <body>
-    <header class="site-header">
-        <nav class="navbar" aria-label="Navegación principal">
-            <a href="../index.html" class="navbar-brand">DevNewSolutions</a>
-            <ul class="navbar-links">
-                <li><a href="../index.html" class="navbar-link">Inicio</a></li>
-                <li><a href="services.html" class="navbar-link">Servicios</a></li>
-                <li><a href="about.html" class="navbar-link">Acerca De</a></li>
-                <li><a href="contact.html" class="navbar-link navbar-link--active">Contacto</a></li>
-            </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Navegación principal">
+            <div class="container">
+                <a href="../index.html" class="navbar-brand">DevNewSolutions</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                    aria-controls="mainNav" aria-expanded="false" aria-label="Abrir menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a href="../index.html" class="nav-link">Inicio</a></li>
+                        <li class="nav-item"><a href="services.html" class="nav-link">Servicios</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link">Acerca De</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link active" aria-current="page">Contacto</a></li>
+                        <li class="nav-item"><a href="login.html" class="nav-link">Iniciar sesión</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <main class="contact">
-        <h1>Contáctanos</h1>
-        <p class="contact-intro">¿Tienes un proyecto en mente? Escríbenos y te responderemos pronto.</p>
+    <main>
+        <section class="bg-light section-padding pb-0">
+            <div class="container text-center">
+                <h1 class="section-title">Contáctanos</h1>
+                <p class="section-subtitle">
+                    ¿Tienes un proyecto en mente? Escríbenos y te responderemos en menos de 24 horas.
+                </p>
+            </div>
+        </section>
 
-        <div class="contact-info">
-            <p><strong>Email:</strong> <a href="mailto:contact@devnewsolutions.com">contact@devnewsolutions.com</a></p>
-            <p><strong>Teléfono:</strong> <a href="tel:+50584516988">+505 84516988</a></p>
-        </div>
+        <section class="section-padding">
+            <div class="container">
+                <div class="row g-5">
+                    <!-- Información de contacto -->
+                    <aside class="col-lg-5">
+                        <h2 class="h4 fw-bold mb-4">Información de contacto</h2>
 
-        <form class="contact-form">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+                        <div class="card border-0 shadow-sm contact-info-card mb-4">
+                            <div class="card-body">
+                                <p class="mb-3">
+                                    <strong>Email:</strong><br>
+                                    <a href="mailto:contact@devnewsolutions.com">contact@devnewsolutions.com</a>
+                                </p>
+                                <p class="mb-3">
+                                    <strong>Teléfono:</strong><br>
+                                    <a href="tel:+50584516988">+505 8451 6988</a>
+                                </p>
+                                <p class="mb-0">
+                                    <strong>Ubicación:</strong><br>
+                                    Managua, Nicaragua
+                                </p>
+                            </div>
+                        </div>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="tu@email.com">
+                        <div class="card border-0 shadow-sm mb-4">
+                            <div class="card-body">
+                                <h3 class="h6 fw-bold mb-3">Horario de atención</h3>
+                                <ul class="list-unstyled text-muted small mb-0">
+                                    <li class="mb-2"><strong>Lunes – Viernes:</strong> 8:00 am – 6:00 pm</li>
+                                    <li class="mb-2"><strong>Sábado:</strong> 9:00 am – 1:00 pm</li>
+                                    <li><strong>Domingo:</strong> Cerrado</li>
+                                </ul>
+                            </div>
+                        </div>
 
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..."></textarea>
+                        <div class="card border-0 bg-primary text-white">
+                            <div class="card-body">
+                                <h3 class="h6 fw-bold mb-2">¿Primera consulta?</h3>
+                                <p class="small mb-0 opacity-75">
+                                    La primera reunión es gratuita. Cuéntanos tu idea y te orientamos
+                                    sin compromiso.
+                                </p>
+                            </div>
+                        </div>
+                    </aside>
 
-            <button type="submit" class="contact-button">Enviar mensaje</button>
-        </form>
+                    <!-- Formulario -->
+                    <div class="col-lg-7">
+                        <h2 class="h4 fw-bold mb-4">Envíanos un mensaje</h2>
+                        <form class="needs-validation" novalidate>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="nombre" class="form-label">Nombre completo</label>
+                                    <input type="text" class="form-control" id="nombre" name="nombre"
+                                        placeholder="Tu nombre" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Correo electrónico</label>
+                                    <input type="email" class="form-control" id="email" name="email"
+                                        placeholder="tu@email.com" required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="asunto" class="form-label">Asunto</label>
+                                    <select class="form-select" id="asunto" name="asunto" required>
+                                        <option value="" selected disabled>Selecciona un asunto</option>
+                                        <option value="web">Desarrollo Web</option>
+                                        <option value="ia">Consultoría IA</option>
+                                        <option value="soporte">Soporte Técnico</option>
+                                        <option value="otro">Otro</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label for="mensaje" class="form-label">Mensaje</label>
+                                    <textarea class="form-control" id="mensaje" name="mensaje" rows="5"
+                                        placeholder="Cuéntanos sobre tu proyecto..." required></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="privacidad" required>
+                                        <label class="form-check-label small text-muted" for="privacidad">
+                                            Acepto que mis datos sean usados para responder mi consulta.
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary btn-lg">Enviar mensaje</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <p class="footer-heading">DevNewSolutions</p>
+                    <p class="small">Desarrollo de software e inteligencia artificial para negocios en crecimiento.</p>
+                </div>
+                <div class="col-md-4">
+                    <p class="footer-heading">Enlaces</p>
+                    <ul class="list-unstyled small">
+                        <li><a href="services.html">Servicios</a></li>
+                        <li><a href="about.html">Acerca De</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <p class="footer-heading">Contacto</p>
+                    <p class="small mb-1"><a href="mailto:contact@devnewsolutions.com">contact@devnewsolutions.com</a></p>
+                    <p class="small mb-0"><a href="tel:+50584516988">+505 8451 6988</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="mb-0">Derechos reservados &copy; 2026 DevNewSolutions</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

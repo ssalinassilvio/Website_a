@@ -1,55 +1,214 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acerca De - DevNewSolutions</title>
+    <title>Acerca De — DevNewSolutions</title>
+    <meta name="description" content="Conoce al equipo y la misión de DevNewSolutions">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/global.css">
-    <link rel="stylesheet" href="../css/navbar.css">
-    <link rel="stylesheet" href="../css/about.css">
 </head>
 
 <body>
-    <header class="site-header">
-        <nav class="navbar" aria-label="Navegación principal">
-            <a href="../index.html" class="navbar-brand">DevNewSolutions</a>
-            <ul class="navbar-links">
-                <li><a href="../index.html" class="navbar-link">Inicio</a></li>
-                <li><a href="services.html" class="navbar-link">Servicios</a></li>
-                <li><a href="about.html" class="navbar-link navbar-link--active">Acerca De</a></li>
-                <li><a href="contact.html" class="navbar-link">Contacto</a></li>
-            </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Navegación principal">
+            <div class="container">
+                <a href="../index.html" class="navbar-brand">DevNewSolutions</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                    aria-controls="mainNav" aria-expanded="false" aria-label="Abrir menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a href="../index.html" class="nav-link">Inicio</a></li>
+                        <li class="nav-item"><a href="services.html" class="nav-link">Servicios</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link active" aria-current="page">Acerca De</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contacto</a></li>
+                        <li class="nav-item"><a href="login.html" class="nav-link">Iniciar sesión</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <main class="about">
-        <h1>Acerca De Nosotros</h1>
-        <p class="about-intro">Somos un equipo apasionado por la tecnología y la innovación.</p>
-
-        <section class="about-section">
-            <h2>¿Quiénes somos?</h2>
-            <p>DevNewSolutions es una empresa dedicada al desarrollo de software y soluciones con inteligencia artificial. Ayudamos a negocios a crecer usando herramientas modernas.</p>
+    <main>
+        <!-- Encabezado de página -->
+        <section class="bg-light section-padding pb-0">
+            <div class="container text-center">
+                <h1 class="section-title">Acerca De Nosotros</h1>
+                <p class="section-subtitle">
+                    Somos un equipo apasionado por la tecnología, el diseño web y la innovación con IA.
+                </p>
+            </div>
         </section>
 
-        <section class="about-section">
-            <h2>Nuestra misión</h2>
-            <p>Queremos que cada cliente alcance su máximo potencial con proyectos tecnológicos simples, útiles y bien hechos.</p>
+        <!-- Quiénes somos -->
+        <section class="section-padding" aria-labelledby="about-who">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6">
+                        <h2 id="about-who" class="h3 fw-bold mb-3">¿Quiénes somos?</h2>
+                        <p class="text-muted">
+                            <strong>DevNewSolutions</strong> es una empresa dedicada al desarrollo de software
+                            y soluciones con inteligencia artificial. Ayudamos a negocios pequeños y medianos
+                            a crecer usando herramientas modernas, accesibles y bien diseñadas.
+                        </p>
+                        <p class="text-muted mb-0">
+                            Este sitio web es un proyecto educativo creado para practicar HTML5 semántico,
+                            hojas de estilo CSS y el framework Bootstrap. Cada sección usa etiquetas
+                            correctas para mejorar la accesibilidad y el SEO.
+                        </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card border-0 shadow-sm p-4 bg-light">
+                            <h3 class="h5 fw-bold mb-3">Datos rápidos</h3>
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-2"><strong>Fundación:</strong> 2024</li>
+                                <li class="mb-2"><strong>Ubicación:</strong> Nicaragua</li>
+                                <li class="mb-2"><strong>Equipo:</strong> 5 personas</li>
+                                <li class="mb-0"><strong>Proyectos entregados:</strong> +20</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="about-section">
-            <h2>Lo que nos importa</h2>
-            <ul class="about-list">
-                <li>Calidad en cada proyecto</li>
-                <li>Comunicación clara con el cliente</li>
-                <li>Innovación con inteligencia artificial</li>
-                <li>Soporte continuo</li>
-            </ul>
+        <!-- Misión y visión -->
+        <section class="section-padding bg-light" aria-labelledby="about-mission">
+            <div class="container">
+                <div class="row g-4">
+                    <article class="col-md-6">
+                        <div class="card border-0 shadow-sm h-100 p-4">
+                            <h2 id="about-mission" class="h4 fw-bold text-primary mb-3">Nuestra misión</h2>
+                            <p class="text-muted mb-0">
+                                Queremos que cada cliente alcance su máximo potencial con proyectos tecnológicos
+                                simples, útiles y bien hechos. Creemos que la tecnología debe ser comprensible
+                                y accesible para todos.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="col-md-6">
+                        <div class="card border-0 shadow-sm h-100 p-4">
+                            <h2 class="h4 fw-bold text-primary mb-3">Nuestra visión</h2>
+                            <p class="text-muted mb-0">
+                                Ser referentes en soluciones digitales con IA en Centroamérica, demostrando que
+                                un buen diseño web y código limpio pueden transformar cualquier negocio.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Valores -->
+        <section class="section-padding" aria-labelledby="about-values">
+            <div class="container">
+                <h2 id="about-values" class="section-title text-center">Lo que nos importa</h2>
+                <div class="row g-4 mt-2">
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="text-center p-3">
+                            <div class="feature-icon mx-auto">&#10003;</div>
+                            <h3 class="h6 fw-bold">Calidad</h3>
+                            <p class="text-muted small mb-0">Cada proyecto se entrega revisado y probado.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="text-center p-3">
+                            <div class="feature-icon mx-auto">&#128172;</div>
+                            <h3 class="h6 fw-bold">Comunicación</h3>
+                            <p class="text-muted small mb-0">Hablamos claro y sin tecnicismos innecesarios.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="text-center p-3">
+                            <div class="feature-icon mx-auto">&#128640;</div>
+                            <h3 class="h6 fw-bold">Innovación</h3>
+                            <p class="text-muted small mb-0">Usamos IA y herramientas actuales del mercado.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="text-center p-3">
+                            <div class="feature-icon mx-auto">&#128737;</div>
+                            <h3 class="h6 fw-bold">Soporte</h3>
+                            <p class="text-muted small mb-0">Acompañamos al cliente después de la entrega.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proceso de trabajo -->
+        <section class="section-padding bg-light" aria-labelledby="about-process">
+            <div class="container">
+                <h2 id="about-process" class="section-title text-center">Cómo trabajamos</h2>
+                <p class="section-subtitle text-center">Un proceso simple en 4 pasos</p>
+                <ol class="row g-4 list-unstyled">
+                    <li class="col-md-3">
+                        <div class="card border-0 shadow-sm h-100 p-3 text-center">
+                            <span class="badge bg-primary rounded-pill mb-2">1</span>
+                            <h3 class="h6 fw-bold">Consulta</h3>
+                            <p class="text-muted small mb-0">Escuchamos tu idea y tus necesidades.</p>
+                        </div>
+                    </li>
+                    <li class="col-md-3">
+                        <div class="card border-0 shadow-sm h-100 p-3 text-center">
+                            <span class="badge bg-primary rounded-pill mb-2">2</span>
+                            <h3 class="h6 fw-bold">Propuesta</h3>
+                            <p class="text-muted small mb-0">Diseñamos un plan con tiempos y costos.</p>
+                        </div>
+                    </li>
+                    <li class="col-md-3">
+                        <div class="card border-0 shadow-sm h-100 p-3 text-center">
+                            <span class="badge bg-primary rounded-pill mb-2">3</span>
+                            <h3 class="h6 fw-bold">Desarrollo</h3>
+                            <p class="text-muted small mb-0">Construimos y te mostramos avances.</p>
+                        </div>
+                    </li>
+                    <li class="col-md-3">
+                        <div class="card border-0 shadow-sm h-100 p-3 text-center">
+                            <span class="badge bg-primary rounded-pill mb-2">4</span>
+                            <h3 class="h6 fw-bold">Entrega</h3>
+                            <p class="text-muted small mb-0">Lanzamos el proyecto y damos soporte.</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
         </section>
     </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <p class="footer-heading">DevNewSolutions</p>
+                    <p class="small">Desarrollo de software e inteligencia artificial para negocios en crecimiento.</p>
+                </div>
+                <div class="col-md-4">
+                    <p class="footer-heading">Enlaces</p>
+                    <ul class="list-unstyled small">
+                        <li><a href="services.html">Servicios</a></li>
+                        <li><a href="about.html">Acerca De</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <p class="footer-heading">Contacto</p>
+                    <p class="small mb-1"><a href="mailto:contact@devnewsolutions.com">contact@devnewsolutions.com</a></p>
+                    <p class="small mb-0"><a href="tel:+50584516988">+505 8451 6988</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="mb-0">Derechos reservados &copy; 2026 DevNewSolutions</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
