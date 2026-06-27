@@ -154,3 +154,62 @@ main {
     font-size: 0.75rem;
     letter-spacing: 0.5px;
 }
+
+/* Navbar con sombra al hacer scroll (JS agrega la clase) */
+.navbar-scrolled {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s ease;
+}
+
+/* Botón "Volver arriba" creado con JavaScript */
+#btn-arriba {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    color: #fff;
+    font-size: 1.25rem;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+#btn-arriba.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+#btn-arriba:hover {
+    background-color: var(--color-primary-dark);
+    transform: translateY(-3px);
+}
+
+/* Animación al filtrar servicios */
+.fade-in {
+    animation: aparecer 0.4s ease;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Saludo dinámico en el hero */
+.saludo-dinamico {
+    font-size: 1.1rem;
+    color: var(--color-primary);
+    font-weight: 600;
+}
